@@ -1,0 +1,33 @@
+@startuml
+
+
+
+actor admin <<upravitelj pravic>>
+actor uporabnik <<gost>>
+actor domaci <<vpisan v PB>>
+
+usecase "Preverjanje uporabnika"
+
+usecase Hranjenje
+  usecase Nalaganje
+  usecase Prenasanje
+  usecase Gledanje
+  usecase Brisanje
+  usecase Urejanje
+ 
+
+usecase  "administracijsko urejanje"
+uporabnik->Gledanje
+
+admin -> "Preverjanje uporabnika"
+domaci -> "Preverjanje uporabnika"
+
+admin -> "administracijsko urejanje"
+
+"Preverjanje uporabnika" -> Hranjenje
+Nalaganje->Hranjenje
+Gledanje->Hranjenje
+Prenasanje->Hranjenje
+Brisanje->Hranjenje
+Urejanje->Hranjenje
+@enduml
