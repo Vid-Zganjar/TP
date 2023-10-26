@@ -17,7 +17,7 @@ zacetniData = {
 
 updateData = {
     "persons": [
-        {"name": "Alice", "age": 31, "employed": False},
+        {"name": "joze", "age": 31, "employed": False},
         {"name": "Bob", "married": True},
         {"name": "Charlie", "age": 26},
         {"name": "David", "employed": False},
